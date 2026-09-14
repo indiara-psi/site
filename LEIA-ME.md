@@ -44,8 +44,9 @@ Procure por `TODO` no código. Itens:
 2. **Foto “Sobre”** — `assets/indiara-sobre.webp` (~843x1264). Em `index.html` e `sobre.html`.
 3. ~~**Link do Google Meu Negócio**~~ — ✅ feito. `https://share.google/wh8gy0sHujxC8as4N` aplicado
    no botão “Avaliações do Google” em `index.html` (hero) e `contato.html`.
-4. **Domínio** — todo o site usa `https://indiaradelima.com.br` nas tags canonical, OG, schema.org,
-   `robots.txt` e `sitemap.xml`. Se o domínio final for outro, buscar e substituir.
+4. ~~**Domínio**~~ — ✅ confirmado. `indiaradelima.com.br` é o domínio real (registrado); já é o
+   mesmo usado em canonical, OG, schema.org, `robots.txt` e `sitemap.xml` — nenhuma alteração
+   necessária. Aguardando propagação/ativação.
 5. ~~**Gmail da cliente**~~ — ✅ recebido: `psiindiaradelima@gmail.com`. Usar para criar o
    repositório GitHub e a conta Cloudflare Pages em nome dela. (Não coloquei como e-mail público
    no site — o dossiê de marca define o WhatsApp/secretária como único canal de contato; avise se
