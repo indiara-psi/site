@@ -1,0 +1,10 @@
+# Material privado da cliente — não deve ir para o repositório público
+Material cliente/
+
+# Documentos internos de processo (não fazem parte do site)
+CLAUDE-NOVO-SITE.md
+DEPLOY-PASSO-A-PASSO.md
+
+# OS / editor
+.DS_Store
+Thumbs.db
