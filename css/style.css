@@ -654,6 +654,28 @@ em { font-style: italic; }
   .step__n { font-size: 1.8rem; }
 }
 
+/* Lista de palavras — rótulo + descrição (ex.: "Cinco palavras" da identidade) */
+.word-grid { display: grid; max-width: 60rem; }
+.word {
+  display: grid;
+  gap: 0.5rem;
+  padding-block: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+.word:last-child { border-bottom: 1px solid var(--line); }
+.word h3 {
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.5rem, 1.3rem + 0.8vw, 1.85rem);
+}
+.word p { font-size: 0.96rem; color: var(--ink-soft); }
+.section--blue .word { border-color: rgba(255,255,255,0.16); }
+.section--blue .word h3 { color: var(--gold-400); }
+.section--blue .word p { color: rgba(255,255,255,0.7); }
+@media (min-width: 680px) {
+  .word { grid-template-columns: 13rem 1fr; align-items: start; gap: 1.75rem; }
+}
+
 /* =========================================================================
    MODALIDADES
    ========================================================================= */
