@@ -14,6 +14,11 @@ seguindo o guia [CLAUDE-NOVO-SITE.md](CLAUDE-NOVO-SITE.md).
 | `quando-quem-sempre-deu-conta.html` | Artigo de exemplo do blog |
 | `contato.html` | Contato (com mapa e orientação de crise) |
 | `politica-de-privacidade.html` | Política de privacidade (LGPD) |
+
+Os arquivos continuam com extensão `.html` no repositório, mas **as URLs públicas do site não
+usam `.html`** (ex: `indiaradelima.com.br/sobre`, não `/sobre.html`). O projeto Cloudflare (tipo
+"Workers com assets") serve `pagina.html` também em `/pagina` automaticamente — todos os links
+internos, `canonical`, `og:url`, schema.org e `sitemap.xml` já usam a versão sem extensão.
 | `css/style.css` | Todo o estilo + design system |
 | `js/main.js` | Menu mobile, header ao rolar, animações de entrada |
 | `assets/favicon.svg` | Ícone (símbolo do olho, azul/dourado) |
@@ -44,9 +49,9 @@ Procure por `TODO` no código. Itens:
 2. **Foto “Sobre”** — `assets/indiara-sobre.webp` (~843x1264). Em `index.html` e `sobre.html`.
 3. ~~**Link do Google Meu Negócio**~~ — ✅ feito. `https://share.google/wh8gy0sHujxC8as4N` aplicado
    no botão “Avaliações do Google” em `index.html` (hero) e `contato.html`.
-4. ~~**Domínio**~~ — ✅ confirmado. `indiaradelima.com.br` é o domínio real (registrado); já é o
-   mesmo usado em canonical, OG, schema.org, `robots.txt` e `sitemap.xml` — nenhuma alteração
-   necessária. Aguardando propagação/ativação.
+4. ~~**Domínio**~~ — ✅ no ar. `indiaradelima.com.br` propagado e servindo o site direto (Cloudflare
+   Workers/Pages + redirect `www` → apex configurado). Falta só conferir HTTPS (Universal SSL,
+   "Always Use HTTPS", modo Full/Full strict) em SSL/TLS no painel do domínio.
 5. ~~**Gmail da cliente**~~ — ✅ recebido: `psiindiaradelima@gmail.com`. Usar para criar o
    repositório GitHub e a conta Cloudflare Pages em nome dela. (Não coloquei como e-mail público
    no site — o dossiê de marca define o WhatsApp/secretária como único canal de contato; avise se
