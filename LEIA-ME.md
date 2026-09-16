@@ -56,8 +56,11 @@ Procure por `TODO` no código. Itens:
    repositório GitHub e a conta Cloudflare Pages em nome dela. (Não coloquei como e-mail público
    no site — o dossiê de marca define o WhatsApp/secretária como único canal de contato; avise se
    quiser exibi-lo também em `contato.html` ou no schema.org.)
-6. **Logo oficial** — se houver arquivo do símbolo/wordmark da marca, substituir o SVG do olho
-   feito à mão (no `<header>`, `<footer>` e `assets/favicon.svg`).
+6. ~~**Logo oficial**~~ — ✅ aplicada. `assets/logo-simbolo.png` (colorida, cabeçalho) e
+   `assets/logo-simbolo-branco.png` (branca, rodapé), ambas com fundo transparente, extraídas do
+   arquivo enviado pela cliente. Favicon novo em `favicon-32/64/256.png` (símbolo branco sobre
+   fundo azul-marinho). Os ícones pequenos decorativos (selo no hero, divisor da assinatura)
+   continuam com o desenho simplificado à mão — não são "a logo", só flourishes.
 7. **Analytics (opcional)** — o `_headers` já libera o Google Tag Manager. Se for usar, colar o
    snippet do GTM/GA4 em todas as páginas.
 8. **Artigos do blog** — 1 artigo pronto; os outros 3 estão marcados “Em breve” em `blog.html`.
