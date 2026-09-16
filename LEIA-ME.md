@@ -50,8 +50,8 @@ Procure por `TODO` no código. Itens:
 3. ~~**Link do Google Meu Negócio**~~ — ✅ feito. `https://share.google/wh8gy0sHujxC8as4N` aplicado
    no botão “Avaliações do Google” em `index.html` (hero) e `contato.html`.
 4. ~~**Domínio**~~ — ✅ no ar. `indiaradelima.com.br` propagado e servindo o site direto (Cloudflare
-   Workers/Pages + redirect `www` → apex configurado). Falta só conferir HTTPS (Universal SSL,
-   "Always Use HTTPS", modo Full/Full strict) em SSL/TLS no painel do domínio.
+   Workers/Pages + redirect `www` → apex configurado). HTTPS confirmado funcionando (redirect
+   automático de http:// e certificado válido, sem configuração manual necessária).
 5. ~~**Gmail da cliente**~~ — ✅ recebido: `psiindiaradelima@gmail.com`. Usar para criar o
    repositório GitHub e a conta Cloudflare Pages em nome dela. (Não coloquei como e-mail público
    no site — o dossiê de marca define o WhatsApp/secretária como único canal de contato; avise se
