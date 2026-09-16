@@ -469,7 +469,7 @@ em { font-style: italic; }
   gap: 0.7rem;
   box-shadow: var(--shadow-soft);
 }
-.hero__badge svg { width: 26px; height: 17px; color: var(--gold-500); flex: none; }
+.hero__badge img { width: 19px; height: 27px; object-fit: contain; flex: none; }
 .hero__badge span { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); }
 .hero__badge strong { display: block; font-family: var(--serif); font-size: 1rem; letter-spacing: 0.02em; color: var(--blue-800); }
 
