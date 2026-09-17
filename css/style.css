@@ -165,7 +165,7 @@ em { font-style: italic; }
 }
 @media (max-width: 720px) { .section__index { display: none; } }
 
-/* Glifo do olho — divisor */
+/* Glifo do olho: divisor */
 .eye-rule {
   display: flex;
   align-items: center;
@@ -652,7 +652,7 @@ em { font-style: italic; }
   .step__n { font-size: 1.8rem; }
 }
 
-/* Lista de palavras — rótulo + descrição (ex.: "Cinco palavras" da identidade) */
+/* Lista de palavras: rótulo + descrição (ex.: "Cinco palavras" da identidade) */
 .word-grid { display: grid; max-width: 60rem; }
 .word {
   display: grid;
@@ -726,7 +726,7 @@ em { font-style: italic; }
 .post__thumb--soon { filter: grayscale(1); opacity: 0.65; }
 .post__thumb--soon .img-placeholder { border-style: solid; }
 
-/* Capa tipográfica — título do artigo como imagem de capa, até haver fotografia própria */
+/* Capa tipográfica: título do artigo como imagem de capa, até haver fotografia própria */
 .post__cover {
   position: absolute;
   inset: 0;
