@@ -723,7 +723,6 @@ em { font-style: italic; }
 }
 .post:hover .post__thumb img { transform: scale(1.04); }
 .post__thumb .img-placeholder { position: absolute; inset: 0; font-size: 0.62rem; }
-.post__thumb--soon { filter: grayscale(1); opacity: 0.65; }
 .post__thumb--soon .img-placeholder { border-style: solid; }
 
 /* Capa tipográfica: título do artigo como imagem de capa, até haver fotografia própria */
@@ -767,7 +766,6 @@ em { font-style: italic; }
   line-height: 1.24;
 }
 .posts--list .post__cover h4 { font-size: clamp(1.2rem, 0.9rem + 1.5vw, 1.7rem); }
-.post__thumb--soon .post__cover::before { opacity: 0.4; }
 
 .article__cover .post__cover {
   justify-content: center;
