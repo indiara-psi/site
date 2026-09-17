@@ -971,6 +971,28 @@ em { font-style: italic; }
 .breadcrumb a:hover { color: var(--blue-800); }
 .breadcrumb span { color: var(--gold-500); }
 
+/* Variante com foto no canto (ex.: hero do Blog) */
+.page-hero--split .page-hero__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+.page-hero--split .page-hero__text { flex: 1; min-width: 0; }
+.page-hero--split .page-hero__photo {
+  flex: none;
+  width: clamp(110px, 16vw, 180px);
+  aspect-ratio: 3 / 4;
+  border: 1px solid var(--line-gold);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.page-hero--split .page-hero__photo img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 640px) {
+  .page-hero--split .page-hero__inner { gap: 1.25rem; }
+  .page-hero--split .page-hero__photo { width: 84px; }
+}
+
 /* =========================================================================
    PROSE genérico
    ========================================================================= */
