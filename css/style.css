@@ -48,7 +48,7 @@ html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: clip
 body {
   font-family: var(--sans);
   font-weight: 300;
-  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.075rem);
+  font-size: clamp(1.03125rem, 1rem + 0.17vw, 1.125rem); /* teste: 16.5px mobile -> 18px desktop */
   line-height: 1.7;
   color: var(--ink);
   background: var(--paper);
