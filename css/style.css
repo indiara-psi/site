@@ -874,8 +874,8 @@ em { font-style: italic; }
 }
 .contact__item:last-child { border-bottom: 1px solid var(--line); }
 .contact__item svg { width: 20px; height: 20px; color: var(--gold-500); margin-top: 0.2rem; }
-.contact__item .k { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft); }
-.contact__item .v { font-family: var(--serif); font-size: 1.15rem; color: var(--blue-800); margin-top: 0.2rem; }
+.contact__item .k { display: block; font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft); }
+.contact__item .v { display: block; font-family: var(--serif); font-size: 1.15rem; color: var(--blue-800); margin-top: 0.2rem; }
 .contact__item .v a:hover { color: var(--gold-500); }
 .contact__item__link { display: contents; }
 .contact__item__link:hover .v { color: var(--gold-500); text-decoration: underline; text-underline-offset: 3px; }
