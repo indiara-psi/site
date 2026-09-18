@@ -573,6 +573,7 @@ em { font-style: italic; }
    SERVIÇOS
    ========================================================================= */
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.cards--single { grid-template-columns: minmax(0, 380px); }
 .card {
   border: 1px solid var(--line);
   padding: 2.25rem 1.9rem;
