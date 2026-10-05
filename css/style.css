@@ -991,6 +991,7 @@ em { font-style: italic; }
 }
 .page-hero--split .page-hero__photo img { width: 100%; height: 100%; object-fit: cover; }
 .page-hero--split .page-hero__photo--lg { width: clamp(220px, 32vw, 400px); }
+.page-hero--split .page-hero__photo--down { margin-top: clamp(1.5rem, 5vw, 3.5rem); }
 @media (max-width: 640px) {
   .page-hero--split .page-hero__inner { gap: 1.25rem; }
   .page-hero--split .page-hero__photo { width: 120px; }
