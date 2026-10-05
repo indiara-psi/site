@@ -15,6 +15,7 @@
   function setNav(open) {
     if (!nav || !toggle) return;
     toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
     nav.classList.toggle("is-open", open);
     document.body.classList.toggle("nav-open", open);
     if (backdrop) backdrop.classList.toggle("is-open", open);
