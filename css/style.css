@@ -630,6 +630,18 @@ em { font-style: italic; }
 /* =========================================================================
    COMO FUNCIONA
    ========================================================================= */
+.cf-layout { display: grid; grid-template-columns: 0.75fr 1.25fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.cf-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid rgba(203, 186, 161, 0.4);
+}
+@media (max-width: 860px) {
+  .cf-layout { grid-template-columns: 1fr; }
+  .cf-photo { max-width: 380px; margin-inline: auto; }
+}
 .steps { display: grid; gap: 0; counter-reset: step; max-width: 60rem; }
 .step {
   display: grid;
@@ -679,6 +691,27 @@ em { font-style: italic; }
 /* =========================================================================
    MODALIDADES
    ========================================================================= */
+.modalidades-layout { display: grid; grid-template-columns: 0.75fr 1.25fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.modalidades-photo { position: relative; }
+.modalidades-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+.modalidades-photo::before {
+  content: "";
+  position: absolute;
+  inset: -14px 14px 14px -14px;
+  border: 1px solid var(--line-gold);
+  z-index: -1;
+}
+.modalidades-layout .modes { grid-template-columns: 1fr; }
+@media (max-width: 860px) {
+  .modalidades-layout { grid-template-columns: 1fr; }
+  .modalidades-photo { max-width: 380px; margin-inline: auto; }
+  .modalidades-photo::before { inset: -10px 10px 10px -10px; }
+}
 .modes { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 .mode {
   border: 1px solid var(--line);
