@@ -993,9 +993,15 @@ em { font-style: italic; }
 .page-hero--split .page-hero__photo--lg { width: clamp(220px, 32vw, 400px); }
 .page-hero--split .page-hero__photo--down { margin-top: clamp(1.5rem, 5vw, 3.5rem); }
 @media (max-width: 640px) {
-  .page-hero--split .page-hero__inner { gap: 1.25rem; }
-  .page-hero--split .page-hero__photo { width: 120px; }
-  .page-hero--split .page-hero__photo--lg { width: 150px; }
+  .page-hero--split .page-hero__inner { flex-direction: column; align-items: stretch; gap: 1.5rem; }
+  .page-hero--split .page-hero__photo {
+    order: -1;
+    width: 100%;
+    max-width: 420px;
+    margin-inline: auto;
+  }
+  .page-hero--split .page-hero__photo--lg { width: 100%; max-width: 420px; }
+  .page-hero--split .page-hero__photo--down { margin-top: 0; }
 }
 
 /* =========================================================================
