@@ -635,6 +635,7 @@ em { font-style: italic; }
   transition: background 0.4s var(--ease);
 }
 .spec-grid li:hover { background: var(--paper-2); }
+.section--tint .spec-grid li:hover { background: var(--paper); }
 .spec-grid .idx { font-family: var(--serif); font-style: italic; color: var(--gold-500); font-size: 0.9rem; }
 .spec-grid h3 { font-size: 1.3rem; }
 @media (max-width: 900px) { .spec-grid { grid-template-columns: 1fr 1fr; } }
