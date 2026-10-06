@@ -573,6 +573,19 @@ em { font-style: italic; }
 /* =========================================================================
    SERVIÇOS
    ========================================================================= */
+.serv-cards-layout { display: grid; grid-template-columns: 0.75fr 1.25fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.serv-cards-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--line-gold);
+}
+.serv-cards-layout .cards { grid-template-columns: 1fr 1fr; }
+@media (max-width: 860px) {
+  .serv-cards-layout { grid-template-columns: 1fr; }
+  .serv-cards-photo { max-width: 380px; margin-inline: auto; }
+}
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .cards--single { grid-template-columns: minmax(0, 380px); }
 .card {
