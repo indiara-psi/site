@@ -627,22 +627,6 @@ em { font-style: italic; }
 @media (max-width: 900px) { .spec-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .spec-grid { grid-template-columns: 1fr; } .spec-grid li { min-height: 0; } }
 
-.spec-banner {
-  margin-top: 1.5rem;
-  padding: 1.75rem 2rem;
-  border: 1px solid var(--line-gold);
-  border-left: 3px solid var(--gold-500);
-  background: var(--paper-2);
-}
-.spec-banner__label {
-  font-family: var(--serif);
-  font-style: italic;
-  color: var(--blue-800);
-  font-size: 1.05rem;
-  margin-bottom: 0.5rem;
-}
-.spec-banner p:last-child { font-size: 0.95rem; color: var(--ink-soft); margin: 0; }
-
 /* =========================================================================
    COMO FUNCIONA
    ========================================================================= */
