@@ -593,7 +593,10 @@ em { font-style: italic; }
 .serv-cards-layout .cards { grid-template-columns: 1fr 1fr; }
 @media (max-width: 860px) {
   .serv-cards-layout { grid-template-columns: 1fr; }
-  .serv-cards-photo { max-width: 380px; margin-inline: auto; }
+  .serv-cards-photo { max-width: 380px; margin-inline: auto; order: 2; }
+  .serv-cards-layout .serv-cards-content { display: contents; }
+  .serv-cards-layout .section__head { order: 1; }
+  .serv-cards-layout .cards { order: 3; grid-template-columns: 1fr; }
 }
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .cards--single { grid-template-columns: minmax(0, 380px); }
