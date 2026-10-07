@@ -893,6 +893,10 @@ em { font-style: italic; }
   font-size: 0.88rem;
   color: var(--ink-soft);
 }
+.article__body .references { font-size: 0.85rem; color: var(--ink-soft); }
+.article__body .references li { margin-top: 0.6rem; }
+.article__body .references a { color: var(--blue-800); }
+.article__signature { font-size: 0.92rem; color: var(--ink-soft); }
 
 /* =========================================================================
    CTA FINAL
