@@ -579,6 +579,20 @@ em { font-style: italic; }
   .about__grid--reorder .about__desc { order: 3; }
 }
 
+/* "Como eu trabalho" (Sobre) — texto + foto à direita */
+.about-work-layout { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.about-work-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--line-gold);
+}
+@media (max-width: 860px) {
+  .about-work-layout { grid-template-columns: 1fr; }
+  .about-work-photo { max-width: 360px; margin-inline: auto; }
+}
+
 /* =========================================================================
    SERVIÇOS
    ========================================================================= */
