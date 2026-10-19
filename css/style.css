@@ -1040,8 +1040,9 @@ em { font-style: italic; }
 .breadcrumb a:hover { color: var(--blue-800); }
 .breadcrumb span { color: var(--gold-500); }
 
-/* Variante empilhada: título → foto (paisagem, largura total) → texto (hero do Blog) */
+/* Variante empilhada: título → foto (paisagem) → texto (hero do Blog) */
 .page-hero--stack .page-hero__banner {
+  max-width: 42rem;
   margin-top: clamp(2rem, 4vw, 3rem);
   margin-bottom: 0;
 }
