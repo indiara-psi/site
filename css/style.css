@@ -1040,7 +1040,19 @@ em { font-style: italic; }
 .breadcrumb a:hover { color: var(--blue-800); }
 .breadcrumb span { color: var(--gold-500); }
 
-/* Variante com foto no canto (ex.: hero do Blog) */
+/* Variante empilhada: título → foto (paisagem, largura total) → texto (hero do Blog) */
+.page-hero--stack .page-hero__banner {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 0;
+}
+.page-hero--stack .page-hero__banner img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--line-gold);
+}
+/* Variante com foto no canto (Sobre, Serviços, Contato) */
 .page-hero--split .page-hero__inner {
   display: flex;
   align-items: flex-start;
