@@ -590,7 +590,7 @@ em { font-style: italic; }
 }
 @media (max-width: 860px) {
   .about-work-layout { grid-template-columns: 1fr; }
-  .about-work-photo { max-width: 360px; margin-inline: auto; }
+  .about-work-photo { max-width: 360px; margin-inline: auto; order: -1; }
 }
 
 /* =========================================================================
