@@ -418,12 +418,12 @@ em { font-style: italic; }
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid var(--line);
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem 2.5rem;
   width: 100%;
 }
-.hero__meta li { display: flex; flex-direction: column; gap: 0.2rem; }
+.hero__meta li { display: flex; flex-direction: column-reverse; gap: 0.3rem; }
 .hero__meta .n {
   font-family: var(--serif);
   font-size: 1.05rem;
