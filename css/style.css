@@ -1041,8 +1041,11 @@ em { font-style: italic; }
 .breadcrumb span { color: var(--gold-500); }
 
 /* Variante empilhada: título → foto (paisagem) → texto (hero do Blog) */
+.page-hero--stack h1,
+.page-hero--stack p {
+  max-width: none;
+}
 .page-hero--stack .page-hero__banner {
-  max-width: 42rem;
   margin-top: clamp(2rem, 4vw, 3rem);
   margin-bottom: 0;
 }
