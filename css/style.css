@@ -410,10 +410,11 @@ em { font-style: italic; }
 }
 .hero__actions {
   margin-top: 2.5rem;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.9rem;
 }
+.hero__actions .btn { width: 100%; }
 .hero__meta {
   margin-top: 3rem;
   padding-top: 2rem;
@@ -501,8 +502,7 @@ em { font-style: italic; }
   .hero__frame { inset: 10px -10px -10px 10px; }
 }
 @media (max-width: 420px) {
-  .hero__actions { flex-direction: column; align-items: stretch; width: 100%; }
-  .hero__actions .btn { width: 100%; }
+  .hero__actions { grid-template-columns: 1fr; }
 }
 
 /* =========================================================================
