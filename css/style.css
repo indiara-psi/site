@@ -809,7 +809,7 @@ em { font-style: italic; }
   position: absolute;
   top: 1.4rem; right: 1.5rem;
   width: 15px; height: 21px;
-  background-image: url("/assets/logo-simbolo.png");
+  background-image: url("/assets/logo-simbolo.webp");
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.55;
