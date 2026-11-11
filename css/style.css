@@ -869,7 +869,7 @@ em { font-style: italic; }
 @media (max-width: 640px) { .posts { grid-template-columns: 1fr; } }
 
 /* Artigo individual */
-.article { max-width: 44rem; margin-inline: auto; }
+.article { max-width: 50rem; margin-inline: auto; }
 .article__header { margin-bottom: clamp(2rem, 4vw, 3rem); }
 .article__cover {
   position: relative;
